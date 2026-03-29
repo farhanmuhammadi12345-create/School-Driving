@@ -1,0 +1,84 @@
+.gallery {
+    margin: 5rem 0;
+}
+
+.gallery__container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.gallery__filters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery__filters button{
+    background: var(color-grey-100);
+    padding: 1.5rem 2rem;
+    color: var(color-grey-900);
+    border-radius: var(radius-3);
+    box-shadow: 0 0.7rem 0 var(color-grey-100);
+}
+
+.gallery__filters button:hover{
+    box-shadow: none;
+}
+
+.gallery__filters button .mixitup-control-active{
+    background: var(primary-color);
+    color: var(color-grey-0);
+}
+
+.gallery__images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.gallery__images li {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.gallery__images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+/* 🔥 hover effect like your image */
+.gallery__images li:hover img {
+    transform: scale(1.08);
+}
+
+@media (max-width: 1024px) {
+    .gallery__images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery__images {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .gallery__filters{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 125px;
+    }
+
+    .gallery__filters button{
+        width: 100%;
+        margin-left: -60px;
+    }
+}

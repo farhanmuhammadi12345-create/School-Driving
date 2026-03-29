@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <title>The FAQs that you should know | Farhan</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+    <link rel="stylesheet" href="./faqs.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">DRIVER</a>
+            <div class="nav__content">
+                <menu class="nav__menu">
+                    <a href="../index.html">Home</a>
+                    <a href="../about/about.html">About</a>
+                    <a href="../gallery/gallery.html">Gallery</a>
+                    <a href="../programs/programs.html">Programs</a>
+                    <a href="faqs.html" class="active">FAQS</a>
+                    <a href="../contact/contact.html">Contact Us</a>
+                </menu>
+                <button class="theme__btn"><i class="uil uil-moon"></i></button>
+                <button class="nav-menu-open"><i class="uil uil-bars"></i></button>
+                <button class="nav-menu-close"><i class="uil uil-multiply"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    </footer>
+
+    <header class="page__header">
+        <div class="page__header-content">
+            <h2>Frequently Asked Questions</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Fugiat, vitae!
+            </p>
+        </div>
+
+    </header>
+
+
+
+    <menu class="container faqs">
+        <article class="faq">
+            <div class="faq__head">
+                <h4>Will you arrange  for a driver's license for me?</h4>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                yes, We start processing your license right from the day we present 
+                you to DVLA for your learner's license.
+            </p>
+        </article>
+
+
+        <article class="faq">
+            <div class="faq__head">
+                <h4>Is it compulsory that I go to DVLA for the tests?</h4>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                Yes. it is only DVLA that can issue a valid driing license for 
+                student drivers. Therefore, the theory and practical tests are 
+                compulsory.
+            </p>
+        </article>
+
+
+        <article class="faq">
+            <div class="faq__head">
+                <h4>Can I choose a preferred transmission (Manual or Automatically)?</h4>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                For the regular and express packages, we take you through both manual 
+                and automatic transmission. However, if a trainee insists on one, we 
+                stick to their selected transmission. For the polishing, we only 
+                train students on the transmission they are already familiar with.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h4>Do you have discounts?</h4>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                Yes, we do.There are discounts for students and national services.
+            </p>
+        </article>
+
+
+        <article class="faq">
+            <div class="faq__head">
+                <h4>Can I choose my preferred instructor?</h4>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                Unfortunately no. instructors are assigned to practical session based on their availability.
+            </p>
+        </article>
+
+
+        <article class="faq">
+            <div class="faq__head">
+                <h4>I can drive. Can I get a drivers license only?</h4>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                Yes, you can.
+            </p>
+        </article>
+
+        <a href="mailto:farhanmuhammadi12345@gmail.com" class="btn primary" target="_blank">Have more questions? Ask us directly!</a>
+    </menu>
+
+
+
+    <!-------------------------------- FOOTER SECTION --------------------------------->
+        <footer>
+        <div class="container footer__container">
+            <menu class="footer__menu">
+                <a href="#">Privacy</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Other Interest</a>
+            </menu>
+            <menu class="footer__social">
+                <a href="" target="_blank"><i class="uil uil-instagram"></i></a>
+                <a href="" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+            </menu>
+        </div>
+        <small class="footer__copy-right">
+                &copy; 2026 Driver Tutorials. All Rights Reserved.
+            </small>
+
+
+
+    <script>
+        const faqs = document.querySelectorAll('.faq');
+        faqs .forEach(faq => {
+            faq.addEventListener('click', () => {
+                faq.classList.toggle('show')
+                if(faq.classList.contains('show')) {
+                    faq.querySelector('i').className = "uil uil-angle-up"
+                } else {
+                    (faq.classList.contains('show')) 
+                    faq.querySelector('i').className = "uil uil-angle-down"
+                }
+                faq.style.transition = "var(--transition)"
+            })
+        });
+    </script>
+    <script src="../script.js"></script>
+</body>
+</html>
